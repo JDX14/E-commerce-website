@@ -1,15 +1,15 @@
 # E-commerce-website
 ## Homepage
-![Homepage](screenshots/Index.jpg)
+![Homepage](Screenshots/Index.jpg)
 
 ## Login Page
-![Login page](screenshots/Login.jpg)
+![Login page](Screenshots/Login.jpg)
 
 ## Cart Page
-![Cart page](screenshots/Cart.jpg)
+![Cart page](Screenshots/Cart.jpg)
 
 ## Product Page
-![Disposable Product page](screenshots/DisposableProducts.jpg)
+![Disposable Product page](Screenshots/DisposableProducts.jpg)
 
 ## Checkout Page
-![Place Order page](screenshots/Payment.jpg)
+![Place Order page](Screenshots/Payment.jpg)
