@@ -1,0 +1,41 @@
+/* Target only the Disposable Products page */
+.featured.disposable-products .col-4 {
+    height: 320px; /* Adjust the height as needed */
+}
+
+/* Ensure images fill the entire height of their container */
+.featured.disposable-products .col-4 img {
+    height: 70%;
+    width: auto; /* Maintain aspect ratio */
+}
+
+.buy-btn {
+    width: 110px; /* Adjust the width as needed */
+    align-items: center;
+}
+
+/* Adjustments for product layout */
+/* Adjustments for product layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal spacing between products */
+}
+
+.col-4 {
+    flex-grow: 1; /* Allow the columns to grow to fill the row */
+    flex-basis: calc(25% - 2rem); /* Adjust width of each product item */
+    max-width: calc(25% - 2rem);
+    margin-bottom: 2rem; /* Add some spacing between products */
+}
+
+.col-4 img {
+    width: 100%; /* Ensure images fill the container */
+    max-width: 100%; /* Prevent images from overflowing */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Add some spacing between image and text */
+}
+
+.product-details {
+    text-align: center; /* Center align text */
+}

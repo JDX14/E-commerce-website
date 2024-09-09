@@ -1,0 +1,88 @@
+/* Heading */
+header {
+    z-index: 9999;
+}
+
+.my-5.py-5 {
+    margin-top: 70px; /* Adjust the value as needed */
+}
+
+.container.text-center.mt-3.pt-5 h2.form-weight-bold {
+    font-size: 40px; /* Increase font size */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    text-align: center;
+    font-family: cursive;
+}
+
+.container.text-center.mt-3.pt-5 hr {
+    display: none; /* Hide the horizontal line */
+}
+
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+
+/* Register */
+#register-form {
+    width: 25%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Center the form content */
+    border-top: 2px solid black;
+    margin-top: -20px; /* Adjust top margin to move the form closer to the heading */
+    padding-top: 10px; /* Add padding at the top for spacing */
+}
+
+#register-form input {
+    width: 80%;
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-bottom: 10px; /* Add margin below input fields */
+}
+
+.form-group label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#register-form #register-btn {
+    width: 80%;
+    background-color: #f42153;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add smooth transition */
+}
+
+#register-form #register-btn:hover {
+    background-color: #e11045; /* Darken the background color on hover */
+}
+
+#register-form #login-url {
+    color: black; 
+    font-size: 18px;
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add smooth transition */
+}
+
+/* Register Form */
+#register-name::placeholder,
+#register-email::placeholder,
+#register-password::placeholder,
+#register-confirm-password::placeholder {
+    font-size: 15px;
+}
+
+.error-message {
+    font-size: 20px; /* Increase font size */
+    color: red; /* Change font color to red */   
+}

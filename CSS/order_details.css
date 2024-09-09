@@ -1,0 +1,69 @@
+/* Orders */
+
+.text-center {
+    text-align: center !important;
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders th {
+    padding: 15px; /* Increased padding for headings */
+    color: black;
+    background-color: #f2f2f2; /* Light background color for headings */
+    font-size: 18px;
+    font-weight: bold; /* Make headings bold */
+    text-align: left; /* Align all headings to the left */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.orders td {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.orders td:first-child,
+.orders th:first-child {
+    padding-left: 40px; /* Add padding to the left side of the first cell */
+}
+
+.orders hr {
+    display: none; /* Hide the <hr> element */
+}
+
+.orders .product-info img {
+    width: 120px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.orders .order-details-btn {
+    padding: 5px 10px; /* Smaller padding for smaller button size */
+    border-radius: 12px; /* Rounded edges */
+    font-size: 16px; /* Larger font size for button text */
+    color: white;
+    background-color: blue;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 50%;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.orders.container h2 {
+    position: relative;
+    z-index: 11; /* Ensure the heading is above other elements */
+    color: black !important;
+    margin-top: 100px; /* Adjust the top margin as needed */
+    text-align: center !important;
+    font-size: 36px !important;
+}
+
+footer {
+    position: fixed;
+}

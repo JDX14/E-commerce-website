@@ -1,0 +1,191 @@
+/* Heading */
+header {
+    z-index: 9999;
+}
+
+.my-5.py-5 {
+    margin-top: 100px; /* Adjust the value as needed */
+}
+
+.container.text-center.mt-3.pt-5 h2.form-weight-bold {
+    font-size: 40px; /* Increase font size */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    text-align: center;
+    font-family: cursive;
+}
+
+.container.text-center.mt-3.pt-5 hr {
+    display: none; /* Hide the horizontal line */
+}
+
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+
+/* login */
+
+/* Heading */
+.container.text-center.mt-3.pt-5 h2.form-weight-bold {
+    font-size: 40px; /* Increase font size */
+    margin-bottom: 0px; /* Reduce margin bottom to bring the line closer to the heading */
+    text-align: center;
+    font-family: cursive;
+}
+
+#login-form {
+    width: 25%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: center; /* Center the form content */
+    border-top: 2px solid black;
+}
+
+#login-email,
+#login-password {
+    width: 80%;
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-bottom: 20px; /* Add margin below input fields */
+}
+
+.form-group label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#login-form input[type="submit"] {
+    width: 80%;
+    background-color: #f42153;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add smooth transition */
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #e11045; /* Darken the background color on hover */
+}
+
+#login-form #register-url {
+    color: black; /* Match the register link color with the button */
+    font-size: 18px;
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s; /* Add smooth transition */
+}
+
+/* Login Form */
+#login-email::placeholder,
+#login-password::placeholder {
+    font-size: 15px; 
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.8rem;
+        z-index: 1500;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .nav-list {
+        display: none;
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 4rem);
+        background-color: #4c4c43;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 1rem 0;
+    }
+
+    /* Ensure the menu icon is visible on smaller screens */
+    .menu-toggle .fa-bars {
+        display: block;
+    }
+
+    /* Hide the close icon initially */
+    .menu-toggle .fa-times {
+        display: none;
+    }
+
+    /* Show the close icon when menu is open */
+    .menu-toggle.show .fa-bars {
+        display: none;
+    }
+
+    .menu-toggle.show .fa-times {
+        display: block;
+    }
+
+    .footer-row {
+        margin-bottom: 100px;
+    }
+
+    
+
+/* Media query for smartphone view */
+@media only screen and (max-width: 768px) {
+    /* Adjust the width of the input fields for smartphone view */
+    #login-email,
+    #login-password {
+        width: 150%; 
+    }
+
+    /* Adjust the height of the footer for smartphone view */
+    footer {
+        height: 220px; 
+    }
+
+     /* Adjust the width and display of the login button */
+    #login-btn {
+        width: calc(100% - 40px); /* Set width to 100% of the container minus some padding */
+        max-width: 300px; /* Set a maximum width if needed */
+        display: block; /* Set display to block */
+        margin: 10px auto; /* Center the login button and add some top and bottom margin for spacing */
+    }
+
+    /* Adjust the display of the register URL */
+    #register-url {
+        display: block; /* Ensure the register URL is displayed as a block */
+        margin-top: 10px; /* Add some top margin for spacing */
+        text-align: center;
+    }
+}
+
+}
+
+
+
+
+
+

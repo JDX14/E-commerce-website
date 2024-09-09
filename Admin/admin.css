@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    width: 100%;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 200px; /* width of the sidebar + some space */  
+    width: calc(100% - 220px); /* full width minus the sidebar */
+}
+
+
+/* Orders Table */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.orders-table th, .orders-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.orders-table thead {
+    color: black;
+    font-weight: bold;
+}
+
+.orders-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.orders-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.orders-table button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.orders-table button:hover {
+    background-color: #555;
+}
+
+/* Products Table */
+.products-table {
+    width: 100%;
+    
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.products-table th, .products-table td {
+    border: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.products-table th,
+.products-table td {
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    text-align: left; /* Align text to left */
+}
+
+.products-table img {
+    width: 100px !important;
+    height: auto !important;
+    display: block; /* Make images behave like block elements */
+    
+}
+
+.products-table button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.products-table button:hover {
+    background-color: #555;
+}
+
+
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* .. from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Form Styles */
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content .form-group {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.modal-content button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Add Product */
+.main-content {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 30px;
+}
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for each form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling for the labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Styling for the input fields */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Change background color on hover */
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Center and style the success and error messages */
+#success-message, #error-message {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.message {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.close-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+

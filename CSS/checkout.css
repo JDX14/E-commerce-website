@@ -1,0 +1,170 @@
+/* Checkout */
+.title {
+    text-align: center;
+    margin: 10rem auto 2rem; /* Adjust the margin-top value to move the heading higher up */
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-top: 70px;
+}
+
+#checkout-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 48%; /* Ensure each section takes up half of the container */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#checkout-form .form-group {
+    width: 100%; /* Ensure form fields are full width */
+    margin-right: 0; /* Reset margin */
+}
+
+.form-section.payment-details {
+    margin-top: 25px; /* Adjust the value as needed */
+}
+
+/* Aligning checkbox with label */
+.cash-on-delivery-checkbox {
+    margin-left: 155px; 
+    vertical-align: middle; 
+    position: relative; 
+    top: 17px; 
+    transform: scale(1.0); 
+    cursor: pointer;
+}
+
+
+/* New Flexbox layout for form rows */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between the form groups */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px; /* Minimum width for form groups */
+}
+
+.total-amount {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right; /* Align the total amount to the right */
+    margin-top: 10px; /* Add some top margin for spacing */
+    font-size: 20px; /* Adjust font size as needed */
+    margin-right: 12px;
+    font-weight: bolder;
+}
+
+.checkout-btn-container {
+    text-align: right; /* Align the button to the right */
+    
+}
+
+#Checkout-btn {
+    width: auto; /* Adjust width as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #f42153;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin-top to create space between total amount and button */
+    display: inline-block; /* Ensure button appears inline */
+}
+
+.form-heading {
+    font-size: 2.2rem; /* Increase font size for form headings */
+    font-weight: bold; /* Add bold font weight */
+    text-align: center; /* Center align the form heading */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+label {
+    font-size: 18px; 
+    margin-bottom: 8px;
+    display: block; /* Display labels as blocks */
+    font-weight: bold; 
+    text-align: left; 
+}
+
+/* Input Field Styling */
+.form-control {
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+}
+
+#checkout-address {
+    width: 92%; /* Adjust width as needed */
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    bottom: 0;
+    width: 99%;
+    position: fixed;
+}
+
+/* Place Order Message */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    border-radius: 12px; /* Increased border radius */
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjusted box shadow */
+    max-width: 80%; /* Adjust width as needed */
+}
+
+.success-message {
+    color: black; 
+}
+
+.error-message {
+    color: #f44336; 
+}
+
+.modal-btn {
+    margin-top: 30px; /* Increased margin */
+    padding: 14px 28px; /* Increased padding */
+    font-size: 18px; /* Increased button font size */
+    background-color: #f42153;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none; /* Remove button outline */
+}
+
+.modal-btn:hover {
+    background-color: #d91c4f;
+}

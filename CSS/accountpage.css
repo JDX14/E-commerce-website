@@ -1,0 +1,180 @@
+header {
+    z-index: 9999;
+}
+
+/* Main content */
+.my-5.py-5 {
+    margin-top: 30px; /* Adjust the value as needed */
+}
+
+.container {
+    justify-content: center;
+    align-items: center; /* Vertically center items */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.left-half,
+.right-half {
+    flex: 1;
+    text-align: center;
+    padding: 0 10px; /* Added padding */
+}
+
+/* Account section */
+.account-info {
+    position: relative;
+}
+
+/* Add this to your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.account-info h3 {
+    font-size: 30px; /* Change as needed */
+    font-family: 'Roboto', sans-serif;
+}
+
+.account-info hr {
+    width: 10%; /* Adjust the width of the line */
+    margin: auto; /* Center the line horizontally */
+    border: none; /* Remove default border */
+    border-top: 2px solid #333; /* Add a thicker top border with a color */
+}
+
+
+.account-info p {
+    text-align: center;
+    font-size: 20px; /* Change as needed */
+    margin-top: 20px;
+}
+
+.account-info #orders-btn,
+.account-info #logout-btn {
+    color: orange;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.line {
+    position: absolute;
+    top: calc(100% - 10px); /* Adjust the value as needed */
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Form styles */
+#account-form {
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form h3 {
+    font-size: 30px; /* Adjust font size as needed */
+    font-family: 'Roboto', sans-serif;
+}
+
+#account-form hr {
+    border: none; /* Remove default border */
+    border-top: 2px solid #333; /* Add a thicker top border with a color */
+    width: 30%; /* Adjust the width of the line */
+    margin: 10px auto; /* Center the line horizontally and add spacing */
+    margin-bottom: 10px;
+}
+
+
+#account-form input {
+    margin: 5px auto;
+    font-size: 18px; /* Change as needed */
+    padding: 10px; /* Change as needed */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#account-form input,
+#account-form label {
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+
+#account-form #change-pass-btn {
+    color: white;
+    background-color: #f42153;
+    border-radius: 5px;
+    padding: 12px 20px; /* Change as needed */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+}
+
+/* Orders */
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.orders.container {
+    margin-top: -50px; /* Adjust the margin-top value to move the section up */
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders th {
+    padding: 15px; /* Increased padding for headings */
+    color: black;
+    background-color: #f2f2f2; /* Light background color for headings */
+    font-size: 18px;
+    font-weight: bold; /* Make headings bold */
+    text-align: left; /* Align all headings to the left */
+    text-transform: uppercase; /* Convert text to uppercase */
+}
+
+.orders td {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.orders td:first-child,
+.orders th:first-child {
+    padding-left: 40px; /* Add padding to the left side of the first cell */
+}
+
+.orders hr {
+    display: none; /* Hide the <hr> element */
+}
+
+.orders .product-info img {
+    width: 120px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.orders .order-details-btn {
+    padding: 5px 10px; /* Smaller padding for smaller button size */
+    border-radius: 12px; /* Rounded edges */
+    font-size: 16px; /* Larger font size for button text */
+    color: white;
+    background-color: #f42153;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 50%;
+}
+
